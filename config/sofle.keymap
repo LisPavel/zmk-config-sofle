@@ -162,7 +162,7 @@
 &none  &kp Q        &kp W        &kp E         &kp R     &kp T                                           &kp Y        &kp U     &kp I         &kp O        &kp P           &none
 &none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F  &kp G                                           &kp H        &hrl 1 J  &hrm RCTRL K  &hrm LALT L  &hrm RGUI SEMI  &none
 &none  &lt 5 Z      &kp X        &kp C         &kp V     &kp B       &kp C_MUTE          &none           &kp N        &kp M     &kp COMMA     &kp DOT      &kp FSLH        &none
-                    &none        &none         &none     &hrl 3 TAB  &hrm LSHFT SPACE    &hrm RSHFT RET  &hrl 2 BSPC  &none     &none         &none
+                    &none        &none         &tog 6    &hrl 3 TAB  &hrm LSHFT SPACE    &hrm RSHFT RET  &hrl 2 BSPC  &none     &none         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -229,11 +229,11 @@
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans      &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOWN    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp UP                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp HOME      &trans      &kp END       &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans        &trans      &tog 6        &trans      &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
