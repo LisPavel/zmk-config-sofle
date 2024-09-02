@@ -180,11 +180,11 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&none  &none      &none     &none      &none      &none                       &none      &none      &none     &none     &none      &none
+&none  &kp CARET  &kp LBKT  &kp PLUS   &kp RBKT   &kp DLLR                    &kp PIPE   &kp PRCNT  &kp STAR  &kp HASH  &kp TILDE  &none
+&none  &kp GRAVE  &kp LBRC  &kp EQUAL  &kp RBRC   &kp DQT                     &kp BSLH   &kp LPAR   &kp SQT   &kp RPAR  &kp COLON  &none
+&none  &kp UNDER  &kp EXCL  &kp AMPS   &kp MINUS  &kp AT    &none     &none   &kp QMARK  &fn_arrow  &kp LT    &kp GT    &kp FSLH   &none
+                  &none     &none      &trans     &trans    &trans    &trans  &trans     &trans     &none     &none
             >;
         };
 
