@@ -350,10 +350,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&msc SCROLL_LEFT'
-  - '&msc SCROLL_DOWN'
-  - '&msc SCROLL_UP'
-  - '&msc SCROLL_RIGHT'
+  - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
   - ''

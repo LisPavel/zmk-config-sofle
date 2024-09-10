@@ -12,6 +12,18 @@
 <svg id="mdi:caps-lock">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-caps-lock" viewBox="0 0 24 24"><path d="M9.96,13.71L12,8.29L14.03,13.72M11.14,6L6.43,18H8.36L9.32,15.43H14.68L15.64,18H17.57L12.86,6H11.14M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.9,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.1,2 20,2M20,20H4V4H20V20Z" /></svg>
 </svg>
+<svg id="mdi:chevron-double-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-down" viewBox="0 0 24 24"><path d="M16.59,5.59L18,7L12,13L6,7L7.41,5.59L12,10.17L16.59,5.59M16.59,11.59L18,13L12,19L6,13L7.41,11.59L12,16.17L16.59,11.59Z" /></svg>
+</svg>
+<svg id="mdi:chevron-double-left">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-left" viewBox="0 0 24 24"><path d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z" /></svg>
+</svg>
+<svg id="mdi:chevron-double-right">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-right" viewBox="0 0 24 24"><path d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" /></svg>
+</svg>
+<svg id="mdi:chevron-double-up">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-up" viewBox="0 0 24 24"><path d="M7.41,18.41L6,17L12,11L18,17L16.59,18.41L12,13.83L7.41,18.41M7.41,12.41L6,11L12,5L18,11L16.59,12.41L12,7.83L7.41,12.41Z" /></svg>
+</svg>
 <svg id="mdi:chevron-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-down" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
 </svg>
@@ -1574,27 +1586,23 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 210)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 64%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SCROLL_LEFT</tspan>
-</text>
+<use href="#mdi:chevron-double-left" xlink:href="#mdi:chevron-double-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:chevron-double-left"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(644, 203)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 64%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SCROLL_DOWN</tspan>
-</text>
+<use href="#mdi:chevron-double-down" xlink:href="#mdi:chevron-double-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:chevron-double-down"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(700, 196)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">SCROLL_UP</tspan>
-</text>
+<use href="#mdi:chevron-double-up" xlink:href="#mdi:chevron-double-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:chevron-double-up"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 64%">&amp;msc</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SCROLL_RIG…</tspan>
-</text>
+<use href="#mdi:chevron-double-right" xlink:href="#mdi:chevron-double-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:chevron-double-right"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(812, 231)" class="key keypos-48">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
