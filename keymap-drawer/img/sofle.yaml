@@ -29,10 +29,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: nav}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: nav}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -61,7 +61,7 @@ layers:
   - ''
   - ''
   - ''
-  navigation:
+  nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,9 +76,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&lng_switch'
-  - VOL DN
-  - $$mdi:volume-mute$$
-  - VOL UP
+  - ''
+  - ''
+  - ''
   - (K)Runner
   - PG DN
   - Prev Desk
@@ -104,8 +104,8 @@ layers:
   - {t: '$$mdi:content-copy$$', h: Copy}
   - {t: '$$mdi:content-paste$$', h: Paste}
   - {t: '$$mdi:redo$$', h: Redo}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - HOME
   - Prev Word
   - Next Word
