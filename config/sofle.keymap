@@ -201,17 +201,20 @@
             label = "qwerty";
         };
 
-        navigation {
-            display-name = "navigation";
+        nav {
+            display-name = "nav";
             bindings = <
-&trans  &trans       &trans        &trans       &trans        &trans                           &trans     &trans            &trans             &trans     &trans     &trans
-&trans  &lng_switch  &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &kp LA(SPACE)                    &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &trans     &trans
-&trans  &kp LGUI     &kp LALT      &kp LCTRL    &kp LSHFT     &kp LG(TAB)                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &trans
-&trans  &kp LC(Z)    &kp LC(X)     &kp LC(INS)  &kp LS(INS)   &kp LC(Y)      &trans    &trans  &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &kp INS    &trans
-                     &trans        &trans       &trans        &trans         &trans    &trans  &trans     &trans            &trans             &trans
+&trans  &trans       &trans     &trans       &trans       &trans                           &trans     &trans            &trans             &trans     &trans     &trans
+&trans  &lng_switch  &none      &none        &none        &kp LA(SPACE)                    &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &trans     &trans
+&trans  &kp LGUI     &kp LALT   &kp LCTRL    &kp LSHFT    &kp LG(TAB)                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &trans
+&trans  &kp LC(Z)    &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)      &none     &none   &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &kp INS    &trans
+                     &trans     &trans       &trans       &trans         &trans    &trans  &trans     &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp LA(TAB) LS(LA(TAB))>,
+                <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+
             label = "navigation";
         };
 
