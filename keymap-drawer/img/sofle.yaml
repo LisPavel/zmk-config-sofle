@@ -29,10 +29,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: nav}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: nav}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -43,7 +43,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:volume-mute$$
+  - ''
   - ''
   - N
   - M
@@ -61,7 +61,7 @@ layers:
   - ''
   - ''
   - ''
-  navigation:
+  nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,9 +76,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&lng_switch'
-  - VOL DN
-  - $$mdi:volume-mute$$
-  - VOL UP
+  - ''
+  - ''
+  - ''
   - (K)Runner
   - PG DN
   - Prev Desk
@@ -104,8 +104,8 @@ layers:
   - {t: '$$mdi:content-copy$$', h: Copy}
   - {t: '$$mdi:content-paste$$', h: Paste}
   - {t: '$$mdi:redo$$', h: Redo}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - HOME
   - Prev Word
   - Next Word
@@ -245,12 +245,12 @@ layers:
   - ''
   - ''
   adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -263,23 +263,23 @@ layers:
   - RGB SAD
   - RGB SAI
   - RGB EFF
+  - BT CLR
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - BT CLR ALL
   - ''
   - ''
   - RGB BRD
   - RGB BRI
   - ''
+  - {type: held}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '3'}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '4'}
   - ''
   - ''
   - ''
@@ -298,7 +298,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -409,7 +409,7 @@ layers:
   - {t: ▽, type: trans}
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:volume-mute$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -428,66 +428,66 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   gaming_base:
+  - ESC
+  - '5'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - T
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - G
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - B
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: CAPS, h: LAlt}
+  - $$mdi:keyboard-space$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
+  - '-'
+  - '='
+  - \
   gaming_rise:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

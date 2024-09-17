@@ -23,7 +23,12 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <9 10>;
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+
+        adjust_layer2 {
+            if-layers = <1 3>;
             then-layer = <4>;
         };
     };
@@ -172,7 +177,7 @@
         compatible = "zmk,keymap";
 
         qwerty {
-            display-name = "default";
+            display-name = "qwerty";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -185,25 +190,36 @@
 &none  &none        &none        &none         &none     &none                                        &none       &none     &none         &none        &none           &none
 &none  &kp Q        &kp W        &kp E         &kp R     &kp T                                        &kp Y       &kp U     &kp I         &kp O        &kp P           &none
 &none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F  &kp G                                        &kp H       &hrl 1 J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &none
-&none  &lt 5 Z      &kp X        &kp C         &kp V     &kp B      &kp C_MUTE         &none          &kp N       &kp M     &kp COMMA     &kp DOT      &kp FSLH        &none
+&none  &lt 5 Z      &kp X        &kp C         &kp V     &kp B      &none              &none          &kp N       &kp M     &kp COMMA     &kp DOT      &kp FSLH        &none
                     &none        &none         &tog 6    &tl 3 TAB  &tm LSHFT SPACE    &tm RSHFT RET  &tl 2 BSPC  &none     &none         &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT>,
+                <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
+
             label = "qwerty";
         };
 
-        navigation {
+        nav {
+            display-name = "nav";
             bindings = <
-&trans  &trans       &trans        &trans       &trans        &trans                           &trans     &trans            &trans             &trans     &trans     &trans
-&trans  &lng_switch  &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &kp LA(SPACE)                    &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &trans     &trans
-&trans  &kp LGUI     &kp LALT      &kp LCTRL    &kp LSHFT     &kp LG(TAB)                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &trans
-&trans  &kp LC(Z)    &kp LC(X)     &kp LC(INS)  &kp LS(INS)   &kp LC(Y)      &trans    &trans  &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &kp INS    &trans
-                     &trans        &trans       &trans        &trans         &trans    &trans  &trans     &trans            &trans             &trans
+&trans  &trans       &trans     &trans       &trans       &trans                           &trans     &trans            &trans             &trans     &trans     &trans
+&trans  &lng_switch  &none      &none        &none        &kp LA(SPACE)                    &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &trans     &trans
+&trans  &kp LGUI     &kp LALT   &kp LCTRL    &kp LSHFT    &kp LG(TAB)                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &trans
+&trans  &kp LC(Z)    &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)      &none     &none   &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &kp INS    &trans
+                     &trans     &trans       &trans       &trans         &trans    &trans  &trans     &trans            &trans             &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp LA(TAB) LS(LA(TAB))>,
+                <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
+
+            label = "navigation";
         };
 
         symbol {
+            display-name = "symbol";
             bindings = <
 &none  &none      &none      &none      &none      &none                        &none      &none     &none     &none      &none      &none
 &none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET                    &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
@@ -211,9 +227,13 @@
 &none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT     &none     &none   &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
                   &none      &none      &trans     &trans     &trans    &trans  &trans     &trans    &none     &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            label = "symbol";
         };
 
         number_fn {
+            display-name = "number_fn";
             bindings = <
 &none  &none          &none         &none          &none          &none                     &none      &none          &none          &none         &none         &none
 &none  &kp F10        &kp F7        &kp F8         &kp F9         &none                     &kp STAR   &kp N7         &kp N8         &kp N9        &kp FSLH      &none
@@ -221,6 +241,9 @@
 &none  &kp F12        &kp F1        &kp F2         &kp F3         &none   &none     &none   &kp MINUS  &kp N1         &kp N2         &kp N3        &kp DOT       &none
                       &none         &none          &trans         &trans  &trans    &trans  &trans     &trans         &none          &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            label = "number_fn";
         };
 
         adjust_layer {
@@ -233,15 +256,16 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                    &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+&none              &none            &none            &none            &none            &none                                      &none         &none         &none         &none         &none           &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &bt BT_CLR    &none         &none         &none         &bt BT_CLR_ALL  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4    &none
+&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none         &none         &none         &none         &none           &none
+                                    &none            &none            &none            &none            &none              &none  &none         &none         &none         &none
             >;
         };
 
         mouse {
+            display-name = "mouse";
             bindings = <
 &none  &none  &none     &none      &none      &none                           &none           &none           &none         &none            &none  &none
 &none  &none  &none     &none      &none      &none                           &none           &none           &none         &none            &none  &none
@@ -249,29 +273,39 @@
 &none  &none  &none     &none      &none      &none     &none       &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
               &none     &none      &mkp MB3   &mkp MB2  &mkp MB1    &mkp MB1  &mkp MB2        &mkp MB3        &none         &none
             >;
+
+            label = "mouse";
         };
 
         media {
+            display-name = "media";
             bindings = <
-&trans  &trans      &trans        &trans      &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOWN    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp UP                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp HOME      &trans      &kp END       &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans        &trans      &tog 6        &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans      &trans        &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOWN    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp UP                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp HOME      &trans      &kp END       &trans      &kp C_MUTE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans        &trans      &tog 6        &trans      &trans        &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "media";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         gaming_base {
+            display-name = "gaming";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp N5     &kp N1  &kp N2  &kp N3         &kp N4                          &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &kp GRAVE
+&kp T    &kp TAB    &kp Q   &kp W   &kp E          &kp R                           &kp Y     &kp U      &kp I      &kp O     &kp P     &kp LBKT
+&kp G    &kp LSHFT  &kp A   &kp S   &kp D          &kp F                           &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
+&kp B    &kp LCTRL  &kp Z   &kp X   &kp C          &kp V      &trans    &trans     &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
+                    &trans  &trans  &mt LALT CAPS  &kp SPACE  &trans    &kp ENTER  &kp BSPC  &kp MINUS  &kp EQUAL  &kp BSLH
             >;
+
+            label = "gaming";
         };
 
         gaming_rise {
+            display-name = "g_rise";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -279,6 +313,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "g_rise";
         };
 
         lower_layer {
