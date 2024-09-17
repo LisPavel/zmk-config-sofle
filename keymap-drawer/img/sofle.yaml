@@ -1,0 +1,695 @@
+layout: {qmk_keyboard: sofle/rev1}
+layers:
+  qwerty:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - {t: A, h: '$$mdi:microsoft-windows$$'}
+  - {t: S, h: LAlt}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: navigation}
+  - G
+  - H
+  - {t: J, h: navigation}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RAlt}
+  - {t: ;, h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - {t: Z, h: mouse}
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:volume-mute$$
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - ''
+  - ''
+  - {t: media, h: toggle}
+  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
+  - {t: '$$mdi:keyboard-space$$', h: LSHFT}
+  - {t: '$$mdi:keyboard-return$$', h: RSHFT}
+  - {t: '$$mdi:backspace$$', h: symbol}
+  - ''
+  - ''
+  - ''
+  navigation:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&lng_switch'
+  - VOL DN
+  - $$mdi:volume-mute$$
+  - VOL UP
+  - (K)Runner
+  - PG DN
+  - Prev Desk
+  - Next Desk
+  - PG UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:microsoft-windows$$
+  - LAlt
+  - $$mdi:apple-keyboard-control$$
+  - {t: LSHFT, type: held}
+  - Desk Overview
+  - $$mdi:menu-left$$
+  - $$mdi:menu-down$$
+  - $$mdi:menu-up$$
+  - $$mdi:menu-right$$
+  - PSCRN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:undo$$', h: Undo}
+  - {t: '$$mdi:content-cut$$', h: Cut}
+  - {t: '$$mdi:content-copy$$', h: Copy}
+  - {t: '$$mdi:content-paste$$', h: Paste}
+  - {t: '$$mdi:redo$$', h: Redo}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - Prev Word
+  - Next Word
+  - END
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  symbol:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - <
+  - '='
+  - /
+  - ^
+  - $
+  - \
+  - +
+  - '>'
+  - '?'
+  - ''
+  - ''
+  - ':'
+  - '['
+  - '{'
+  - (
+  - '"'
+  - ''''
+  - )
+  - '}'
+  - ']'
+  - ;
+  - ''
+  - ''
+  - '#'
+  - _
+  - '&'
+  - '-'
+  - '@'
+  - ''
+  - ''
+  - '~'
+  - '*'
+  - '|'
+  - '`'
+  - '%'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  number_fn:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - F7
+  - F8
+  - F9
+  - ''
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - ''
+  - ''
+  - {t: F11, h: '$$mdi:microsoft-windows$$'}
+  - {t: F4, h: LAlt}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F6, h: LSHFT}
+  - ''
+  - +
+  - {t: '4', h: LSHFT}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: LAlt}
+  - {t: '0', h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - F12
+  - F1
+  - F2
+  - F3
+  - ''
+  - ''
+  - ''
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  adjust:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - EP TOG
+  - RGB HUD
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LAlt
+  - $$mdi:apple-keyboard-control$$
+  - LSHFT
+  - ''
+  - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-right$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
+  - ''
+  - ''
+  media:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:menu-down$$
+  - VOL DN
+  - $$mdi:volume-mute$$
+  - VOL UP
+  - $$mdi:menu-up$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:menu-left$$
+  - $$mdi:play-pause$$
+  - $$mdi:menu-right$$
+  - $$mdi:skip-next$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - {t: ▽, type: trans}
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: media, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming_base:
+  - ESC
+  - '5'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - T
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - G
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - B
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: CAPS, h: LAlt}
+  - $$mdi:keyboard-space$$
+  - {t: ▽, type: trans}
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
+  - '-'
+  - '='
+  - \
+  gaming_rise:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lower:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - F12
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '|'
+  - {t: ▽, type: trans}
+  - '='
+  - '-'
+  - +
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - ;
+  - ':'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  raise:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - PSCRN
+  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG UP
+  - {t: ▽, type: trans}
+  - $$mdi:menu-up$$
+  - {t: ▽, type: trans}
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LAlt
+  - $$mdi:apple-keyboard-control$$
+  - LSHFT
+  - {t: ▽, type: trans}
+  - CLCK
+  - PG DN
+  - $$mdi:menu-left$$
+  - $$mdi:menu-down$$
+  - $$mdi:menu-right$$
+  - $$mdi:backspace-reverse$$
+  - $$mdi:backspace$$
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [54, 55]
+  k: {t: '$$mdi:caps-lock$$', h: Caps Word}
+  l: [qwerty]
+- p: [14, 15]
+  k: ESC
+  l: [qwerty]
+- p: [20, 21]
+  k: $$mdi:backspace-reverse$$
+  l: [qwerty]
+- p: [32, 33]
+  k: ']'
+  l: [qwerty]
+- p: [26, 27]
+  k: '['
+  l: [qwerty]
+- p: [20, 19]
+  k: ''''
+  l: [qwerty]
+- p: [15, 16]
+  k: '`'
+  l: [qwerty]
