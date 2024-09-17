@@ -280,14 +280,15 @@
         media {
             display-name = "media";
             bindings = <
-&trans  &trans      &trans        &trans      &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOWN    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp UP                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp HOME      &trans      &kp END       &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans        &trans      &tog 6        &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans      &trans        &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOWN    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp UP                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp HOME      &trans      &kp END       &trans      &kp C_MUTE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans        &trans      &tog 6        &trans      &trans        &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "media";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         gaming_base {
