@@ -213,11 +213,11 @@
         nav {
             display-name = "nav";
             bindings = <
-&trans  &trans       &trans     &trans       &trans       &trans                           &trans     &trans            &trans             &trans     &trans     &trans
-&trans  &lng_switch  &none      &none        &none        &kp LA(SPACE)                    &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &trans     &trans
-&trans  &kp LGUI     &kp LALT   &kp LCTRL    &kp LSHFT    &kp LG(TAB)                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &trans
-&trans  &kp LC(Z)    &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)      &none     &none   &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &kp INS    &trans
-                     &trans     &trans       &trans       &trans         &trans    &trans  &trans     &trans            &trans             &trans
+&none  &none      &none         &none       &none         &none                         &none      &none             &none              &none      &none      &none
+&none  &none      &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp C_BRI_UP                  &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &kp INS    &none
+&none  &osm LGUI  &osm LALT     &osm LCTRL  &osm LSHFT    &kp C_BRI_DN                  &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &none
+&none  &tog 7     &kp C_PREV    &kp C_PP    &kp C_NEXT    &none         &none    &none  &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &none      &none
+                  &none         &none       &osm LSHFT    &trans        &none    &none  &trans     &trans            &none              &none
             >;
 
             sensor-bindings =
@@ -319,7 +319,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &tog 7
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
