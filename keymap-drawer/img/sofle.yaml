@@ -53,12 +53,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: media, h: toggle}
-  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
-  - {t: '$$mdi:keyboard-space$$', h: LSHFT}
-  - {t: '$$mdi:keyboard-return$$', h: RSHFT}
-  - {t: '$$mdi:backspace$$', h: symbol}
+  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
+  - {t: '$$mdi:keyboard-space$$', h: number_fn}
   - ''
+  - ''
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
+  - {t: '$$mdi:backspace$$', h: RSHFT}
   - ''
   - ''
   nav:
