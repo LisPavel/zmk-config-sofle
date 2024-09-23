@@ -611,7 +611,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [54, 55]
+- p: [53, 56]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
   l: [qwerty]
 - p: [14, 15]
