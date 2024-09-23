@@ -38,7 +38,7 @@
 
         c_capswords {
             bindings = <&caps_word>;
-            key-positions = <54 55>;
+            key-positions = <53 56>;
             layers = <0>;
         };
 
