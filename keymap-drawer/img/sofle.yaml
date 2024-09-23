@@ -62,66 +62,66 @@ layers:
   - ''
   - ''
   nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&lng_switch'
   - ''
   - ''
   - ''
-  - (K)Runner
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - VOL DN
+  - $$mdi:volume-mute$$
+  - VOL UP
+  - BRI UP
   - PG DN
   - Prev Desk
   - Next Desk
   - PG UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:microsoft-windows$$
-  - LAlt
-  - $$mdi:apple-keyboard-control$$
-  - {t: LSHFT, type: held}
-  - Desk Overview
+  - INS
+  - ''
+  - ''
+  - {t: '$$mdi:microsoft-windows$$', h: sticky}
+  - {t: LAlt, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: LSHFT, h: sticky, type: held}
+  - BRI DN
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
   - $$mdi:menu-right$$
   - PSCRN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:undo$$', h: Undo}
-  - {t: '$$mdi:content-cut$$', h: Cut}
-  - {t: '$$mdi:content-copy$$', h: Copy}
-  - {t: '$$mdi:content-paste$$', h: Paste}
-  - {t: '$$mdi:redo$$', h: Redo}
+  - ''
+  - ''
+  - {t: gaming_base, h: toggle}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - ''
   - ''
   - ''
   - HOME
   - Prev Word
   - Next Word
   - END
-  - INS
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   symbol:
   - ''
   - ''
@@ -538,7 +538,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: gaming_base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
