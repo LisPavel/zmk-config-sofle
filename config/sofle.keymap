@@ -203,10 +203,7 @@
                     &none        &none         &tm LSHFT TAB  &lt 3 SPACE  &none    &none  &tl 2 RET  &tm RSHFT BSPC  &none         &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LEFT RIGHT>,
-                <&inc_dec_kp LEFT RIGHT>;
-
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LC(LEFT) LC(RIGHT)>;
             label = "qwerty";
         };
 
@@ -220,10 +217,7 @@
                   &none         &none       &osm LSHFT    &trans        &none    &none  &trans     &trans            &none              &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp LA(TAB) LS(LA(TAB))>,
-                <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
-
+            sensor-bindings = <&inc_dec_kp LA(TAB) LS(LA(TAB)) &inc_dec_kp LC(TAB) LC(LS(TAB))>;
             label = "navigation";
         };
 
