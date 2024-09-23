@@ -230,11 +230,11 @@
         symbol {
             display-name = "symbol";
             bindings = <
-&none  &none      &none      &none      &none      &none                        &none      &none     &none     &none      &none      &none
-&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET                    &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
-&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT                      &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
-&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT     &none     &none   &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
-                  &none      &none      &trans     &trans     &trans    &trans  &trans     &trans    &none     &none
+&none  &none      &none      &none      &none      &none                      &none      &none     &none     &none      &none      &none
+&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET                  &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
+&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT                    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
+&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT     &none    &none  &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
+                  &none      &none      &trans     &trans     &none    &none  &trans     &trans    &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
