@@ -201,7 +201,7 @@ layers:
   - F7
   - F8
   - F9
-  - ''
+  - '?'
   - '*'
   - '7'
   - '8'
@@ -213,7 +213,7 @@ layers:
   - {t: F4, h: LAlt}
   - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F6, h: LSHFT}
-  - ''
+  - /
   - +
   - {t: '4', h: LSHFT}
   - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
@@ -225,7 +225,7 @@ layers:
   - F1
   - F2
   - F3
-  - ''
+  - ','
   - ''
   - ''
   - '-'
