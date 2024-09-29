@@ -38,7 +38,7 @@ layers:
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - {t: Z, h: mouse}
+  - '&z_mouse'
   - X
   - C
   - V
@@ -343,7 +343,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: mouse, h: toggle}
   - ''
   - ''
   - ''
