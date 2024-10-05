@@ -180,13 +180,6 @@
             quick-release;
             ignore-modifiers;
         };
-
-        z_mouse: z_mouse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "Z_MOUSE";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&tog 5>;
-        };
     };
 
     keymap {
@@ -206,7 +199,7 @@
 &none  &none        &none        &none         &none          &none                        &none      &none           &none         &none        &none           &none
 &none  &kp Q        &kp W        &kp E         &kp R          &kp T                        &kp Y      &kp U           &kp I         &kp O        &kp P           &none
 &none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F       &kp G                        &kp H      &hrl 1 J        &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &none
-&none  &z_mouse     &kp X        &kp C         &kp V          &kp B        &none    &none  &kp N      &kp M           &kp COMMA     &kp DOT      &kp FSLH        &none
+&none  &lt 5 Z      &kp X        &kp C         &kp V          &kp B        &none    &none  &kp N      &kp M           &kp COMMA     &kp DOT      &kp FSLH        &none
                     &none        &none         &tm LSHFT TAB  &lt 3 SPACE  &none    &none  &tl 2 RET  &tm RSHFT BSPC  &none         &none
             >;
 
