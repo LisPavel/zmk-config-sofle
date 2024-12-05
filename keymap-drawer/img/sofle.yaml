@@ -29,10 +29,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: nav}
+  - {t: F, h: navigation}
   - G
   - H
-  - {t: J, h: nav}
+  - {t: J, h: navigation}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: RSHFT}
   - ''
   - ''
-  nav:
+  navigation:
   - ''
   - ''
   - ''
@@ -99,7 +99,7 @@ layers:
   - PSCRN
   - ''
   - ''
-  - {t: gaming_base, h: toggle}
+  - {t: gaming, h: toggle}
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
@@ -366,7 +366,7 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - ''
   - ''
-  gaming_base:
+  gaming:
   - ESC
   - '5'
   - '1'
@@ -421,13 +421,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: CAPS, h: LAlt}
   - $$mdi:keyboard-space$$
-  - gaming_rise
+  - g_rise
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
   - $$mdi:backspace-reverse$$
   - '='
   - \
-  gaming_rise:
+  g_rise:
   - '`'
   - F1
   - F2
@@ -477,7 +477,7 @@ layers:
   - LAlt
   - $$mdi:apple-keyboard-control$$
   - $$mdi:microsoft-windows$$
-  - {t: gaming_base, h: toggle}
+  - {t: gaming, h: toggle}
   - ''''
   - /
   - {t: ▽, type: trans}
