@@ -3,27 +3,32 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100    // 10
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // Config from @caksoylar, defaults in comments
+
 &mmv {
-  acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <500>;     // 300
-  delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;      // 1
+    time-to-max-speed-ms = <500>;     // 300
+    delay-ms = <0>;                   // 0
 };
 
 &msc {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <40>;      // 300
-  delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <40>;      // 300
+    delay-ms = <0>;                   // 0
 };
 
 #define BASE 0
@@ -298,14 +303,17 @@
         gaming_base {
             display-name = "gaming";
             bindings = <
-&kp ESC  &kp N5     &kp N1  &kp N2  &kp N3         &kp N4                          &kp N6    &kp N7   &kp N8     &kp N9    &kp N0    &kp GRAVE
-&kp T    &kp TAB    &kp Q   &kp W   &kp E          &kp R                           &kp Y     &kp U    &kp I      &kp O     &kp P     &kp LBKT
-&kp G    &kp LSHFT  &kp A   &kp S   &kp D          &kp F                           &kp H     &kp J    &kp K      &kp L     &kp SEMI  &kp APOS
-&kp B    &kp LCTRL  &kp Z   &kp X   &kp C          &kp V      &trans    &trans     &kp N     &kp M    &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
-                    &trans  &trans  &mt LALT CAPS  &kp SPACE  &mo 7     &kp ENTER  &kp BSPC  &kp DEL  &kp EQUAL  &kp BSLH
+&kp ESC  &kp N5     &kp N1  &kp N2  &kp N3         &kp N4                                &kp N6    &kp N7   &kp N8     &kp N9    &kp N0    &kp GRAVE
+&kp T    &kp TAB    &kp Q   &kp W   &kp E          &kp R                                 &kp Y     &kp U    &kp I      &kp O     &kp P     &kp LBKT
+&kp G    &kp LSHFT  &kp A   &kp S   &kp D          &kp F                                 &kp H     &kp J    &kp K      &kp L     &kp SEMI  &kp APOS
+&kp B    &kp LCTRL  &kp Z   &kp X   &kp C          &kp V      &kp C_MUTE    &kp C_PAUSE  &kp N     &kp M    &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
+                    &trans  &trans  &mt LALT CAPS  &kp SPACE  &mo 7         &kp ENTER    &kp BSPC  &kp DEL  &kp EQUAL  &kp BSLH
             >;
 
             label = "gaming";
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
         };
 
         gaming_rise {
