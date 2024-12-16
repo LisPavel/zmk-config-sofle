@@ -410,7 +410,7 @@ layers:
   - C
   - V
   - $$mdi:volume-mute$$
-  - PAUSE
+  - PAUSE BREAK
   - N
   - M
   - ','
