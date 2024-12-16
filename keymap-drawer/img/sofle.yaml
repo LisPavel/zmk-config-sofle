@@ -409,8 +409,8 @@ layers:
   - X
   - C
   - V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:volume-mute$$
+  - PAUSE
   - N
   - M
   - ','
