@@ -343,10 +343,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: mouse, h: toggle, type: held}
+  - {type: held}
   - ''
   - ''
-  - ''
+  - {t: mouse, h: toggle}
   - ''
   - ''
   - ''
