@@ -76,10 +76,10 @@ layers:
   - ''
   - ''
   - ''
-  - VOL DN
-  - $$mdi:volume-mute$$
-  - VOL UP
-  - BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
   - PG DN
   - Prev Desk
   - Next Desk
@@ -91,7 +91,7 @@ layers:
   - {t: LAlt, h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: LSHFT, h: sticky, type: held}
-  - BRI DN
+  - ''
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
@@ -99,11 +99,11 @@ layers:
   - PSCRN
   - ''
   - ''
-  - {t: gaming, h: toggle}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - ''
+  - {t: '$$mdi:undo$$', h: Undo}
+  - {t: '$$mdi:content-cut$$', h: Cut}
+  - {t: '$$mdi:content-copy$$', h: Copy}
+  - {t: '$$mdi:content-paste$$', h: Paste}
+  - {t: '$$mdi:redo$$', h: Redo}
   - ''
   - ''
   - HOME
