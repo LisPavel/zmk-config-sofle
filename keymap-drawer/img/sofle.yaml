@@ -257,12 +257,12 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
+  - ''
+  - BRI DN
+  - VOL DN
+  - $$mdi:volume-mute$$
+  - VOL UP
+  - BRI UP
   - BT CLR
   - ''
   - ''
@@ -270,11 +270,11 @@ layers:
   - BT CLR ALL
   - ''
   - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - {type: held}
-  - ''
+  - $$mdi:skip-previous$$
+  - $$mdi:menu-left$$
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:menu-right$$', type: held}
+  - $$mdi:skip-next$$
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -287,7 +287,7 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
+  - ''
   - ''
   - ''
   - ''
