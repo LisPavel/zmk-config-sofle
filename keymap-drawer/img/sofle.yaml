@@ -110,7 +110,7 @@ layers:
   - Prev Word
   - Next Word
   - END
-  - ''
+  - {t: gaming, h: toggle}
   - ''
   - ''
   - ''
