@@ -65,8 +65,8 @@
             layers = <0>;
         };
 
-        c_del {
-            bindings = <&kp DEL>;
+        c_del_bspc {
+            bindings = <&bsp_del>;
             key-positions = <20 19>;
             layers = <0 1 2 3>;
         };
