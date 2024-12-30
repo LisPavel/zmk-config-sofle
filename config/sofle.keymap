@@ -67,8 +67,8 @@
 
         c_del {
             bindings = <&kp DEL>;
-            key-positions = <20 21>;
-            layers = <0>;
+            key-positions = <20 19>;
+            layers = <0 1 2 3>;
         };
 
         c_rbkt {
@@ -85,14 +85,31 @@
 
         c_sqt {
             bindings = <&kp SQT>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
         c_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <15 16>;
+            key-positions = <13 14>;
             layers = <0>;
+        };
+
+        c_enter {
+            bindings = <&kp RET>;
+            key-positions = <16 15>;
+            layers = <0 1 2 3>;
+        };
+
+        c_tab {
+            bindings = <&kp TAB>;
+            key-positions = <25 26>;
+        };
+
+        c_tg_mouse {
+            bindings = <&tog 5>;
+            key-positions = <37 48>;
+            layers = <0 5>;
         };
     };
 
@@ -197,6 +214,15 @@
             quick-release;
             ignore-modifiers;
         };
+
+        bsp_del: bsp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP_DEL";
+            bindings = <&kp BSPC>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -213,11 +239,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none  &none        &none        &none         &none          &none                             &none      &none           &none         &none        &none           &none
-&none  &kp Q        &kp W        &kp E         &kp R          &kp T                             &kp Y      &kp U           &kp I         &kp O        &kp P           &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F       &kp G                             &kp H      &hrl 1 J        &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &none
-&none  &lt 5 Z      &kp X        &kp C         &kp V          &kp B        &kp C_MUTE    &none  &kp N      &kp M           &kp COMMA     &kp DOT      &kp FSLH        &none
-                    &none        &none         &tm LSHFT TAB  &lt 3 SPACE  &none         &none  &tl 2 RET  &tm RSHFT BSPC  &none         &none
+&none  &none        &none        &none         &none         &none                           &none  &none         &none         &none        &none           &none
+&none  &kp Q        &kp W        &kp E         &kp R         &kp T                           &kp Y  &kp U         &kp I         &kp O        &kp P           &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G                           &kp H  &hrm RSHFT J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &none
+&none  &lt 5 Z      &kp X        &kp C         &kp V         &kp B      &kp C_MUTE    &none  &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &none
+                    &none        &none         &mo 1         &kp SPACE  &none         &none  &mo 2  &mo 3         &none         &none
             >;
 
             sensor-bindings =
@@ -234,7 +260,7 @@
 &none  &none      &none      &none        &none        &none                      &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &kp INS    &none
 &none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHFT   &none                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &none
 &none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)  &none    &none  &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &tog 6     &none
-                  &none      &none        &osm LSHFT   &trans     &none    &none  &trans     &trans            &none              &none
+                  &none      &none        &trans       &trans     &none    &none  &trans     &trans            &none              &none
             >;
 
             label = "navigation";
@@ -260,7 +286,7 @@
 &none  &none         &none         &none          &none          &none                      &none    &none          &none          &none         &none         &none
 &none  &kp F1        &kp F2        &kp F3         &kp F4         &kp F5                     &kp F6   &kp F7         &kp F8         &kp F9        &kp F10       &none
 &none  &hrm LGUI N1  &hrm LALT N2  &hrm LCTRL N3  &hrm LSHFT N4  &kp N5                     &kp N6   &hrm LSHFT N7  &hrm LCTRL N8  &hrm LALT N9  &hrm LGUI N0  &none
-&none  &none         &none         &none          &none          &kp F11  &none     &none   &kp F12  &none          &kp COMMA      &kp DOT       &kp FSLH      &none
+&none  &kp MINUS     &kp PLUS      &kp STAR       &kp LPAR       &kp F11  &none     &none   &kp F12  &kp RPAR       &kp COMMA      &kp DOT       &kp FSLH      &none
                      &none         &none          &trans         &trans   &trans    &trans  &trans   &trans         &none          &none
             >;
 
@@ -292,7 +318,7 @@
 &none  &none  &none     &none      &none      &none                           &none           &none           &none         &none            &none  &none
 &none  &none  &none     &none      &none      &none                           &none           &none           &none         &none            &none  &none
 &none  &none  &kp LALT  &kp LCTRL  &kp LSHFT  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none  &none     &none      &tog 5     &none     &none       &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
+&none  &none  &none     &none      &none      &none     &none       &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
               &none     &none      &mkp MB3   &mkp MB2  &mkp MB1    &mkp MB1  &mkp MB2        &mkp MB3        &none         &none
             >;
 
