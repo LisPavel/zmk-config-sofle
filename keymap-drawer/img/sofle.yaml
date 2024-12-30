@@ -496,7 +496,7 @@ combos:
   k: ESC
   l: [qwerty]
 - p: [20, 19]
-  k: $$mdi:backspace-reverse$$
+  k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   l: [qwerty, navigation, symbol, number_fn]
 - p: [32, 33]
   k: ']'
