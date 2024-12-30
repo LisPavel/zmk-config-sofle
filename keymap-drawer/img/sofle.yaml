@@ -29,10 +29,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: RSHFT}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -53,12 +53,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
-  - {t: '$$mdi:keyboard-space$$', h: number_fn}
+  - navigation
+  - $$mdi:keyboard-space$$
   - ''
   - ''
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - {t: '$$mdi:backspace$$', h: RSHFT}
+  - symbol
+  - number_fn
   - ''
   - ''
   navigation:
@@ -90,7 +90,7 @@ layers:
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
   - {t: LAlt, h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: LSHFT, h: sticky, type: held}
+  - {t: LSHFT, h: sticky}
   - ''
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
@@ -114,7 +114,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: LSHFT, h: sticky}
+  - {type: held}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -221,15 +221,15 @@ layers:
   - {t: '0', h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '-'
+  - +
+  - '*'
+  - (
   - F11
   - ''
   - ''
   - F12
-  - ''
+  - )
   - ','
   - .
   - /
@@ -237,11 +237,11 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   - ''
   adjust:
@@ -273,7 +273,7 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:menu-left$$
   - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-right$$', type: held}
+  - $$mdi:menu-right$$
   - $$mdi:skip-next$$
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}
@@ -297,12 +297,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
   - ''
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - ''
   mouse:
@@ -346,7 +346,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {t: mouse, h: toggle}
+  - ''
   - ''
   - ''
   - ''
@@ -495,18 +495,26 @@ combos:
 - p: [14, 15]
   k: ESC
   l: [qwerty]
-- p: [20, 21]
+- p: [20, 19]
   k: $$mdi:backspace-reverse$$
-  l: [qwerty]
+  l: [qwerty, navigation, symbol, number_fn]
 - p: [32, 33]
   k: ']'
   l: [qwerty]
 - p: [26, 27]
   k: '['
   l: [qwerty]
-- p: [20, 19]
+- p: [20, 21]
   k: ''''
   l: [qwerty]
-- p: [15, 16]
+- p: [13, 14]
   k: '`'
   l: [qwerty]
+- p: [16, 15]
+  k: $$mdi:keyboard-return$$
+  l: [qwerty, navigation, symbol, number_fn]
+- p: [25, 26]
+  k: $$mdi:keyboard-tab$$
+- p: [37, 48]
+  k: {t: mouse, h: toggle}
+  l: [qwerty, mouse]
