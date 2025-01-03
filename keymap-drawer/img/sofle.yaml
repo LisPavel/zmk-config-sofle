@@ -53,12 +53,12 @@ layers:
   - ''
   - ''
   - ''
-  - navigation
+  - number_fn
   - $$mdi:keyboard-space$$
   - ''
   - ''
   - symbol
-  - number_fn
+  - navigation
   - ''
   - ''
   navigation:
@@ -114,12 +114,12 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   - ''
   symbol:
@@ -236,12 +236,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   adjust:
