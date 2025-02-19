@@ -58,7 +58,7 @@ layers:
   - ''
   - ''
   - symbol
-  - navigation
+  - '&la 1'
   - ''
   - ''
   navigation:
@@ -119,7 +119,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   symbol:
@@ -302,7 +302,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   mouse:
