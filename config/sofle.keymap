@@ -220,6 +220,30 @@
             key-positions = <32 45>;
             layers = <0 3>;
         };
+
+        c_prcnt {
+            bindings = <&kp PRCNT>;
+            key-positions = <16 29>;
+            layers = <0 3>;
+        };
+
+        c_star {
+            bindings = <&kp STAR>;
+            key-positions = <19 30>;
+            layers = <0 3>;
+        };
+
+        c_hash {
+            bindings = <&kp HASH>;
+            key-positions = <39 38>;
+            layers = <0 3>;
+        };
+
+        c_at {
+            bindings = <&kp AT>;
+            key-positions = <46 47>;
+            layers = <0 3>;
+        };
     };
 
     macros {
