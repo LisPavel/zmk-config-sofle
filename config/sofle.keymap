@@ -215,6 +215,26 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_TAB";
+            bindings = <&m_hold_mod_press_key LCTRL TAB>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_TAB";
+            bindings = <&m_hold_mod_press_key LALT TAB>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
