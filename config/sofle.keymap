@@ -184,6 +184,42 @@
             key-positions = <20 32>;
             layers = <0 3>;
         };
+
+        c_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <15 28>;
+            layers = <0 3>;
+        };
+
+        c_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <20 31>;
+            layers = <0 3>;
+        };
+
+        c_fslh {
+            bindings = <&kp FSLH>;
+            key-positions = <27 16>;
+            layers = <0 3>;
+        };
+
+        c_bslh {
+            bindings = <&kp BSLH>;
+            key-positions = <19 32>;
+            layers = <0 3>;
+        };
+
+        c_lt {
+            bindings = <&kp LT>;
+            key-positions = <27 40>;
+            layers = <0 3>;
+        };
+
+        c_gt {
+            bindings = <&kp GT>;
+            key-positions = <32 45>;
+            layers = <0 3>;
+        };
     };
 
     macros {
