@@ -62,7 +62,7 @@
         c_esc {
             bindings = <&kp ESC>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         c_del_bspc {
@@ -103,7 +103,8 @@
 
         c_tab {
             bindings = <&kp TAB>;
-            key-positions = <25 26>;
+            key-positions = <20 21>;
+            layers = <0 1 3 2>;
         };
 
         c_tg_mouse {
