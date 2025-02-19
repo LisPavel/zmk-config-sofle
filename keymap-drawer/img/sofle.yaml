@@ -531,3 +531,27 @@ combos:
 - p: [44, 45]
   k: '}'
   l: [qwerty, number_fn]
+- p: [17, 29]
+  k: ^
+  l: [qwerty, number_fn]
+- p: [18, 30]
+  k: $
+  l: [qwerty, number_fn]
+- p: [16, 28]
+  k: '!'
+  l: [qwerty, number_fn]
+- p: [19, 31]
+  k: '?'
+  l: [qwerty, number_fn]
+- p: [40, 39]
+  k: _
+  l: [qwerty, number_fn]
+- p: [45, 46]
+  k: '-'
+  l: [qwerty, number_fn]
+- p: [15, 27]
+  k: '&'
+  l: [qwerty, number_fn]
+- p: [20, 32]
+  k: '|'
+  l: [qwerty, number_fn]
