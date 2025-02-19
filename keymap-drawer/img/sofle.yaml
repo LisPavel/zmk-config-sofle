@@ -555,3 +555,21 @@ combos:
 - p: [20, 32]
   k: '|'
   l: [qwerty, number_fn]
+- p: [15, 28]
+  k: '='
+  l: [qwerty, number_fn]
+- p: [20, 31]
+  k: +
+  l: [qwerty, number_fn]
+- p: [27, 16]
+  k: /
+  l: [qwerty, number_fn]
+- p: [19, 32]
+  k: \
+  l: [qwerty, number_fn]
+- p: [27, 40]
+  k: <
+  l: [qwerty, number_fn]
+- p: [32, 45]
+  k: '>'
+  l: [qwerty, number_fn]
