@@ -503,7 +503,7 @@ combos:
   l: [qwerty, number_fn]
 - p: [28, 29]
   k: '['
-  l: [qwerty]
+  l: [qwerty, number_fn]
 - p: [19, 18]
   k: ''''
   l: [qwerty, number_fn]
@@ -519,3 +519,15 @@ combos:
 - p: [37, 48]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
+- p: [28, 27]
+  k: (
+  l: [qwerty, number_fn]
+- p: [31, 32]
+  k: )
+  l: [qwerty, number_fn]
+- p: [40, 41]
+  k: '{'
+  l: [qwerty, number_fn]
+- p: [44, 45]
+  k: '}'
+  l: [qwerty, number_fn]
