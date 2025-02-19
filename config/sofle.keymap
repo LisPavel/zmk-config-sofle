@@ -136,6 +136,54 @@
             key-positions = <44 45>;
             layers = <0 3>;
         };
+
+        c_caret {
+            bindings = <&kp CARET>;
+            key-positions = <17 29>;
+            layers = <0 3>;
+        };
+
+        c_dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <18 30>;
+            layers = <0 3>;
+        };
+
+        c_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <16 28>;
+            layers = <0 3>;
+        };
+
+        c_qmark {
+            bindings = <&kp QMARK>;
+            key-positions = <19 31>;
+            layers = <0 3>;
+        };
+
+        c_under {
+            bindings = <&kp UNDER>;
+            key-positions = <40 39>;
+            layers = <0 3>;
+        };
+
+        c_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <45 46>;
+            layers = <0 3>;
+        };
+
+        c_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <15 27>;
+            layers = <0 3>;
+        };
+
+        c_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <20 32>;
+            layers = <0 3>;
+        };
     };
 
     macros {
