@@ -80,7 +80,7 @@
         c_lbkt {
             bindings = <&kp LBKT>;
             key-positions = <28 29>;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         c_sqt {
@@ -111,6 +111,30 @@
             bindings = <&tog 5>;
             key-positions = <37 48>;
             layers = <0 5>;
+        };
+
+        c_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <28 27>;
+            layers = <0 3>;
+        };
+
+        c_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <31 32>;
+            layers = <0 3>;
+        };
+
+        c_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <40 41>;
+            layers = <0 3>;
+        };
+
+        c_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <44 45>;
+            layers = <0 3>;
         };
     };
 
