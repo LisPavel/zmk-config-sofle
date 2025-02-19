@@ -402,7 +402,7 @@
             display-name = "nav";
             bindings = <
 &none  &none      &none      &none        &none        &none                      &none      &none             &none              &none      &none      &none
-&none  &none      &none      &none        &none        &none                      &kp PG_DN  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PG_UP  &kp INS    &none
+&none  &none      &none      &kp PG_DN    &kp PG_UP    &none                      &ctrl_tab  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &alt_tab   &kp INS    &none
 &none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHFT   &none                      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT  &kp PSCRN  &none
 &none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)  &none    &none  &kp HOME   &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &tog 6     &none
                   &none      &none        &trans       &trans     &none    &none  &trans     &trans            &none              &none
@@ -414,11 +414,11 @@
         symbol {
             display-name = "symbol";
             bindings = <
-&none  &none      &none      &none      &none      &none                      &none      &none     &none     &none      &none      &none
-&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET                  &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
-&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT                    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
-&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT     &none    &none  &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
-                  &none      &none      &trans     &trans     &none    &none  &trans     &trans    &none     &none
+&none  &none  &none  &none  &none   &none                   &none   &none   &none  &none  &none  &none
+&none  &none  &none  &none  &none   &none                   &none   &none   &none  &none  &none  &none
+&none  &none  &none  &none  &none   &none                   &none   &none   &none  &none  &none  &none
+&none  &none  &none  &none  &none   &none   &none    &none  &none   &none   &none  &none  &none  &none
+              &none  &none  &trans  &trans  &none    &none  &trans  &trans  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
