@@ -573,3 +573,15 @@ combos:
 - p: [32, 45]
   k: '>'
   l: [qwerty, number_fn]
+- p: [16, 29]
+  k: '%'
+  l: [qwerty, number_fn]
+- p: [19, 30]
+  k: '*'
+  l: [qwerty, number_fn]
+- p: [39, 38]
+  k: '#'
+  l: [qwerty, number_fn]
+- p: [46, 47]
+  k: '@'
+  l: [qwerty, number_fn]
