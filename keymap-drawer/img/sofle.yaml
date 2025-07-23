@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   qwerty:
   - ''
@@ -57,7 +57,7 @@ layers:
   - $$mdi:keyboard-space$$
   - ''
   - ''
-  - symbol
+  - LSHFT
   - '&la 1'
   - ''
   - ''
@@ -119,67 +119,6 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  symbol:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {type: held}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -265,7 +204,7 @@ layers:
   - BRI UP
   - BT CLR
   - ''
-  - ''
+  - OUT TOG
   - ''
   - BT CLR ALL
   - ''
@@ -494,10 +433,10 @@ combos:
   l: [qwerty]
 - p: [14, 15]
   k: ESC
-  l: [qwerty, navigation, symbol, number_fn]
+  l: [qwerty, navigation, number_fn]
 - p: [20, 19]
   k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
-  l: [qwerty, navigation, symbol, number_fn]
+  l: [qwerty, navigation, number_fn]
 - p: [30, 31]
   k: ']'
   l: [qwerty, number_fn]
@@ -512,10 +451,10 @@ combos:
   l: [qwerty, number_fn]
 - p: [16, 15]
   k: $$mdi:keyboard-return$$
-  l: [qwerty, navigation, symbol, number_fn]
+  l: [qwerty, navigation, number_fn]
 - p: [20, 21]
   k: $$mdi:keyboard-tab$$
-  l: [qwerty, navigation, number_fn, symbol]
+  l: [qwerty, navigation, number_fn]
 - p: [37, 48]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
