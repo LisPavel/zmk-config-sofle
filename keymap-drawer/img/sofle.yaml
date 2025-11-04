@@ -150,7 +150,7 @@ layers:
   - ''
   - {t: '0', h: '$$mdi:microsoft-windows$$'}
   - {t: '4', h: LAlt}
-  - {t: '3', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '6', h: LSHFT}
   - '-'
   - ''
