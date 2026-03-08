@@ -388,8 +388,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - $$mdi:menu-up$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F11
+  - F12
   - \
   - H
   - J
